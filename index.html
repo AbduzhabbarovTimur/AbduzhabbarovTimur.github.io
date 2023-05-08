@@ -4,192 +4,221 @@
     <meta charset="utf-8">
     <title>Проект сайта космическая верстка</title>
     <link rel="stylesheet" href="style.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bebusneuebold" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <a href="Untitled-1.html" class="logo"><img src="logo 1.svg"></a>
-            <ul class="nav-list">
-                <li class="nav-items"><a href="#">Компания</a></li>
-                <li class="nav-items"><a href="#">Католог</a></li>
-                <li class="nav-items"><a href="#">Контакты</a></li>
-            </ul>
 
-            <ul class="icon">
-            <li class="conect-icon"><a href="#"><img src="mail-icon.svg"></a></li>
-            <li class="conect-icon"><a href="#"><img src="phone-icon.svg"></a></li>
-            </ul>
-            <section class="to-the-moon">
-            <h1>На Луну <br>
-                и обратно
-            </h1>
-            <p>Космически крутой туризм. <br>
-               Пакетные и индивидуальные туры <br>
-               по лучшим планетам галактики.</p>
-            
-            <div class="moon"><img src="moon-rocket.png"></div>
-            <div class="selection tour">
-                <a href="#">Подбор Тура</a>
-                <img src="right-arrow-dark.png">
-
-            </div>
-         </section>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="advantages">
-            <img class="advantage-icon-1" src="advantage-icon-1.svg">
-            <span>
-                Комфортабельные <br>
-                ракеты отечественного <br>
-                производства.
-            </span>
-            <img class="advantage-icon-2" src="advantage-icon-2.svg">
-            <span>
-                Вкусное и полезное <br>
-                космическое питание <br>
-                на борту
-            </span>
-            <img class="advantage-icon-3" src="advantage-icon-3.svg">
-            <span>
-                Весь состав пилотов <br>
-                состоит из бывших <br>
-                космонавтов.
-            </span>
-            <img class="advantage-icon-4" src="advantage-icon-4.svg">
-            <span>
-                Экскурсии на луноходе <br>
-                на Море Ясности <br>
-                и Океан Бурь.
-            </span>
-        </div>
-        <div class="content">
-            <div class="map"><img src="map.jpg"></div>
-            <p class="relax">Надоело летать в отпуск за <br>
-                границу? Как насчет того, <br>
-                чтобы слетать на Луну?</p>
-
-            <div class="tour">
-                <p>Устали от пакетных туров и пляжного отдыха? Полотенца<br>
-                и магнитики, которые вы привозите из отпуска уже<br>
-                не радуют ваших близких? В следующий раз привезите<br>
-                им настоящий лунный камень! </p>
-                
-                <p>Мы предлагаем инновационную услугу на туристическом<br>
-                рынке — космический туризм (пока только на Луну, сейчас<br>
-                решаем вопросы с визовым центром Венеры).</p>
-                
-                <p>Берите отпуск и отправляйтесь с нами в полет,<br>
-                он займет всего 72 часа!</p>
-            </div>
-            <div class="recommendations-list">
-                <div class="list">
-                <p>Не забудьте взять с собой:</p>
-                <ul>
-                    <li><strong>Паспорт.</strong> Визовый режим пока не введен, но на границе<br>
-                    <span>будет досмотр.</span></li>
-                        
-                    <li><strong>Тяжелые ботинки.</strong> Пригодятся вам в условиях низкой<br>
-                        <span>гравитации на Луне.</span></li>
-                        
-                    <li><strong>Криптовалюта.</strong> Рекомендуем заранее обменять немного<br>
-                        <span>Лун-коинов, чтобы купить сувениры</span></li>
-                </ul>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo">
+                Лого
                 </div>
-            </div>
-            <div class="recommendations-list">
-                <div class="list1">
-                <p>Это лучше оставить дома:</p>
-                    <ul>
-                        <li><strong>Телефон.</strong> В космосе не ловит ваш любимый<br>
-                        <span>оператор и нет WI-FI.</span></li>
-                        
-                        <li><strong>Бутерброды.</strong> На борту будет питание, которое<br>
-                        <span>не разлетится по кабине в условиях невесомости.</span></li>
-                        
-                        <li><strong>Плавки/купальник.</strong> Море Ясности и Океан Бурь<br>
-                        <span>это большие кратеры. Без воды.</span></li>
-                    </ul>
+                <nav class="nav">
+                    <a class="nav_link" href="#structure">Состав</a>
+                    <a class="nav_link" href="#resources">Ресурсы</a>
+                    <a class="nav_link" href="#population">Население</a>
+                    <a class="nav_link" href="#specialization">Специализация</a>
+                    <a class="nav_link" href="#problem">Проблемы</a>
+                </nav>
+                <button class="burger" type="button">
+                    <span class="burger_items"></span>
+                </button>
+            </div><!--/Header_inner-->
+        </div><!--/Container-->
+    </header><!--/Header-->
+
+    <!--Intro-->
+    <div class="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <div class="intro_items">
+                <img class=intro_myface src="aleksei-pavlov-3Z4kUvw93NY-unsplash-photoaidcom-cropped.jpg">
                 </div>
-        </div>
-        <div class="text">
-            <section class="application">
-            <span>Готовы открыть<br>
-                для себя что-то новое?</span>
-            <p>Отправьте заявку, заполнив форму справа,<br>
-                мы рассмотрим вашу кандидатуру и свяжемся<br>
-                с вами в течении 24 часов.</p>
-            </section>
-            <form class="form">
-                <input type="text" placeholder="ФИО" name="Full name" required>
+                <h1 class="intro_title">Факты о Хабаровском крае</h1>
+                <h2 class="intro_subtitle">Об этом многие жители не знают</h2>
+            </div><!--/Intro_inner-->
+        </div><!--/Container-->
+    </div><!--/Intro-->
 
-                <input type="tel" placeholder="Контактный телефон" name="contact number" required>
-            
-                <input type="height" placeholder="Рост" name="height" required> 
+    <!--Structure-->
+    <section class="section">
+        <div id="structure">
+            <div class="container">
 
-                <input type="weight" placeholder="Вес" name="width" required>
+                    <div class="section_header">
+                        <h2 class="section_title">Состав</h2>
+                    
+                </div>
+                <div class="structure">
+                    <div class="structure_items">
+                        <img class="structure_photo" src="arthur-gbE6abcQwCk-unsplash.jpg">
+                        <div class="structure_text">
+                            <p>Хабаровский край включает 236 муниципальных<br>
+                            образований: 29 городских и 188 сельских поселений,<br>
+                            а также два городских округа – города Хабаровск и<br>
+                            Комсомольск-на-Амуре. В составе субъекта<br>
+                            шесть городов краевого и один город <br>
+                            районного значения, 17 муниципальных районов,<br>
+                            233 муниципальных образований.<br>
+                            Административный центр края — город Хабаровск.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/Container-->
+        </div><!--/Id structure-->
+    </section><!--/Section-->
 
-                <input type="checkbox" required > <p>Согласен(а) наобработку персональных данных</p>
+    <!--Resources-->
+    <section class="section section--resources">
+        <div id="resources">
+            <div class="container">
 
-                <input type="submit" value=" Отправить "> <img src="right-arrow-white.png">
-            </form>   
-        </div>
-        <div class="flight schedule">
-            <span>Расписание <br>
-                полетов</span>
-            <p>Для вашего удобства мы разработали график полетов<br>
-                с вылетами из Москвы и Санкт-Петербурга. Вы также можете<br>
-                запросить <u style="color:  #FECA30;">индивидуальный полет</u>. </p>
-            <table>
-                <tr>
-                    <th>№ Рейса</th>
-                    <th>Откуда-куда</th>
-                    <th>Время вылета</th>
-                    <th>Время прилета</th>
-                </tr>
-                <tr>
-                    <td>1635</td>
-                    <td>VKO-MOON</td>
-                    <td>00:45</td>
-                    <td>23:15</td>
-                </tr>
-                <tr>
-                    <td>70200</td>
-                    <td>LED-MOON</td>
-                    <td>17:30</td>
-                    <td>16:20</td>
-                </tr>
-            </table>
-        </div>
-</main>
+                    <div class="section_header">
+                        <h2 class="section_title">Ресурсы</h2>
+                    </div>
+                </div>
+                <div class="resources">
+                    <div class="resources_items">
+                        <img class="resources_icon" src="icons8-coal-80.png">
+                        <h4 class="resources_title">Уголь</h4>
+                        <div class="resources_text">
+                            Буренский каменноугольный бассейн,<br>
+                            Хурмулинское, Лиамское месторождение<br>
+                            бурого угля и др
+                        </div>
+                    </div>
+                    <div class="resources_items">
+                        <img class="resources_icon" src="icons8-periodic-table-of-elements-80.png">
+                        <h4 class="resources_title">Цветные металлы</h4>
+                        <div class="resources_text">
+                            Уран, медь, никель, титан, платина, свинец,<br>
+                            цирконий, золото, индий, вольфрам,<br>
+                            скандий и многие др
+                        </div>
+                    </div>
+                    <div class="resources_items">
+                        <img class="resources_icon" src="icons8-water-element-80.png">
+                        <h4 class="resources_title">Водные</h4>
+                        <div class="resources_text">
+                            Главной состовляющей Хабаровского<br>
+                            края является река Амур, обеспечивающая<br>
+                            ведение рыбохозяйства
+                        </div>
+                    </div>
+                </div>
+            </div><!--Container-->
+        </div><!--/Id resources-->
+    </section><!--/Section-->
+
+    <!--Population-->
+    <section class="section section--population">
+        <div id="population">
+            <div class="container">
+
+                    <div class="section_header">
+                        <h2 class="section_title">Население</h2>
+                    </div>
+                </div>
+                <div class="population">
+                    <div class="population_items">
+                        <div class="population_text">
+                            <p><strong>Численость:</strong> На 1 мая 2023 численность населения (постоянных жителей) Хабаровского<br> 
+                                края cоставляет 1 315 643 человека
+                            </p>
+                            <p><strong>Национальный состав:</strong> Населения Хабаровского края, согласно последней переписи<br>
+                                населения, распределён примерно следующим образом: русские — 1 207 760 (91.80%)<br>
+                                человек, украинцы — 26 313 (2.00%) человек, нанайцы — 11 183 (0.85%) человека,<br>
+                                корейцы — 8 157 (0.62%) человек, другие национальности (менее 0,5% каждая) — 62 230<br>
+                                (4.73%).
+                            </p>
+                            <p><strong>Половой состав:</strong> Всего на 1 мая 2023 в Хабаровского края постоянно проживают<br>
+                                581 646 мужчин (44.21%) и 733 997 женщин (55.79%).
+                            </p>
+                            <p><strong>Возрастной состав:</strong> Детей в возрасте до 6 лет - 130 906 человек, подростков (школьников)<br>
+                                в возрасте от 7 до 17 лет - 155 904 человека, молодежи от 18 до 29 лет - 157 219 человек,<br>
+                                взрослых в возрасте от 30 до 60 лет - 566 384 человека, пожилых людей от 60 лет - 286<br>
+                                человек, а долгожителей Хабаровского края старше 80 лет - 18 419 человек.
+                            </p>
+                            <p><strong>Уровень образования:</strong> Уровень образования жителей Хабаровского края: высшее<br>
+                                образование имеют 23.7% (311 807 человек), неполное высшее — 2.4% (31 575 человек),<br>
+                                среднее профессиональное — 36.7% (482 841 человек), 11 классов — 14.6% (192 084<br>
+                                человека), 9 классов — 10.5% (138 143 человека), 5 классов — 7.0% (92 095 человек),<br>
+                                не имеют образования — 0.6% (7 894 человека), неграмотные — 0.2% (2 631 человек).
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div><!--/Container-->
+        </div><!--Id population-->
+    </section><!--/Section-->
+
+    <!--Specialization-->
+    <section class="section ">
+        <div id="specialization">
+            <div class="container">
     
-    <footer>
-    <div class="footer">
-        <img src="logo 2.svg">
-        <span>Space-Z</span>
-        <p>ООО «Космос Зэ».<br>
-            Все права защищены.</p>
-    </div>
-    <ul class="information">
-        <hr><li style="margin-left: 60px;">Компания</li>
-        <li style="margin-left: 165px;">Каталог</li>
-        <li>Контакты</li>
-    </ul>
-    <section style="margin-left: 443px;">
-        <p><a href="#">История</a></p>
-        <p><a href="#">Миссия</a></p>
-        <p><a href="#">Команда</a></p>
-    </section>
-    <section>
-        <p><a href="#">Полеты</a></p>
-        <p><a href="#">Проживание</a></p>
-        <p><a href="#">Экскурсии</a></p>
-    </section>
-    <section>
-        <p><a href="#">Отправить заявку</a></p>
-        <p><a href="#">Схема проезда</a></p>
-        <p><a href="#">Время работы</a></p>
-    </section>
-    </footer>
-></body>
+                    <div class="section_header">
+                        <h2 class="section_title">Специализация</h2>
+                    </div>
+                    <div class="specialization">
+                        <div class="specialization_items">
+                            <div class="specialization_text">
+                            <p>Регион обладает богатой базой сырьевых минеральных ресурсов: углём, природным<br>
+                                газом, рудами чёрных, цветных, редкоземельных и драгоценных металлов, ураном,<br>
+                                цветными камнями, строительными минералами. Поэтому на его территории<br>
+                                развиты металлургия, машиностроение, химическое производство, лесная<br>
+                                отрасль, рыбная и пищевая промышленности.
+                            </p>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div><!--/Container-->
+        </div><!--/Id specialization-->
+    </section><!--/Section-->
+
+    <!--Problem-->
+    <section class="section ">
+        <div id="problem">
+            <div class="container">
+    
+                    <div class="section_header">
+                        <h2 class="section_title">Проблемы</h2>
+                    </div>
+                    <div class="problem">
+                        <div class="problem_items">
+                            <div class="problem_text">
+                            <p><strong>Экологические:</strong> Они здесь связаны с существенным преобразованием поверхности<br>
+                                и, как следствие, с уничтожением и деградацией почвенного, растительного покровов,<br>
+                                изменением гидрологического режима поверхностных и подземных вод, нарушением<br>
+                                криологического режима, а также изменением среды обитания фауны и потерей<br>
+                                эстетической привлекательности ландшафтов.
+                            </p>
+                            <p><strong>Экономические:</strong> В Хабаровском крае действуют существенные ограничения<br>
+                                экономического роста. Они включают много факторов: высокую затратность жизни,<br>
+                                значительную долю низкоэффективных перерабатывающих производств, дефицитность<br>
+                                бюджета, высокий государственный долг, низкую налогооблагаемую базу, растущий<br>
+                                дефицит высококвалифицированных рабочих и специалистов.
+                            </p>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div><!--/Container-->
+        </div><!--/Id problem-->
+    </section><!--/Section-->
+    
+    
+<script src="script.js"></script>
+<script src="script_header.js"></script>
+
+</body>
 </html>
